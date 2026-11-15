@@ -17,8 +17,7 @@ public class GUI_VistaPrincipal extends javax.swing.JFrame {
      */
     public GUI_VistaPrincipal() {
         initComponents();
-    }
-
+        }
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -28,13 +27,23 @@ public class GUI_VistaPrincipal extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
+        jPanel1 = new javax.swing.JPanel();
+        lblTitulo = new javax.swing.JLabel();
+        lblFondo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setText("jLabel1");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1411, 924, -1, -1));
+
+        lblTitulo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/Resources/Mi Libro Interactivo_ Cuidado del Agua (1).png"))); // NOI18N
+        lblTitulo.setMaximumSize(new java.awt.Dimension(80, 80));
+        getContentPane().add(lblTitulo, new org.netbeans.lib.awtextra.AbsoluteConstraints(-140, 150, 1570, 730));
+
+        lblFondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/Resources/Entrada .jpeg"))); // NOI18N
+        lblFondo.setText("jLabel1");
+        getContentPane().add(lblFondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 6, 1452, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -65,6 +74,8 @@ public class GUI_VistaPrincipal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel jLabel1;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JLabel lblFondo;
+    private javax.swing.JLabel lblTitulo;
     // End of variables declaration//GEN-END:variables
 }
