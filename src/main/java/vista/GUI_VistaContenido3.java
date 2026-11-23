@@ -4,12 +4,14 @@
  */
 package vista;
 
+import java.awt.event.ActionListener;
+
 /**
  *
  * @author Alejandra
  */
 public class GUI_VistaContenido3 extends javax.swing.JFrame {
-    
+
     private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(GUI_VistaContenido3.class.getName());
 
     /**
@@ -17,6 +19,14 @@ public class GUI_VistaContenido3 extends javax.swing.JFrame {
      */
     public GUI_VistaContenido3() {
         initComponents();
+    }
+
+    public void agregarListenerAnterior(ActionListener listener) {
+        btnAnterior.addActionListener(listener);
+    }
+
+    public void agregarListenerActividad(ActionListener listener) {
+        btnActividad.addActionListener(listener);
     }
 
     /**

@@ -4,12 +4,16 @@
  */
 package vista;
 
+import java.awt.event.ActionListener;
+import javax.swing.JOptionPane;
+import modelo.Pregunta;
+
 /**
  *
  * @author Alejandra
  */
 public class GUI_ActividadInteractiva extends javax.swing.JFrame {
-    
+
     private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(GUI_ActividadInteractiva.class.getName());
 
     /**
@@ -17,6 +21,46 @@ public class GUI_ActividadInteractiva extends javax.swing.JFrame {
      */
     public GUI_ActividadInteractiva() {
         initComponents();
+    }
+
+    public void agregarListenerResultados(ActionListener listener) {
+        btnVerResultado.addActionListener(listener);
+    }
+
+    public void agregarListenerVolver(ActionListener listener) {
+        lblVolverActividad.addActionListener(listener);
+    }
+
+    public int[] solicitarRespuestas(Pregunta[] preguntas) {
+        int[] respuestas = new int[preguntas.length];
+
+        for (int i = 0; i < preguntas.length; i++) {
+
+            String[] opciones = preguntas[i].getOpciones();
+
+            Object seleccion = JOptionPane.showInputDialog(
+                    this,
+                    preguntas[i].getTexto(),
+                    "Pregunta " + (i + 1),
+                    JOptionPane.QUESTION_MESSAGE,
+                    null,
+                    opciones,
+                    opciones[0]
+            );
+
+            if (seleccion == null) {
+                return null;
+            }
+
+            for (int j = 0; j < opciones.length; j++) {
+                if (seleccion.equals(opciones[j])) {
+                    respuestas[i] = j;
+                    break;
+                }
+            }
+        }
+
+        return respuestas;
     }
 
     /**
@@ -42,12 +86,12 @@ public class GUI_ActividadInteractiva extends javax.swing.JFrame {
         lblVolverActividad.setFont(new java.awt.Font("Tempus Sans ITC", 1, 24)); // NOI18N
         lblVolverActividad.setText("Volver a la información");
         lblVolverActividad.setToolTipText("");
-        pnlFondo.add(lblVolverActividad, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 760, -1, 70));
+        pnlFondo.add(lblVolverActividad, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 90, -1, 70));
 
         btnVerResultado.setBackground(new java.awt.Color(0, 204, 153));
         btnVerResultado.setFont(new java.awt.Font("Tempus Sans ITC", 1, 24)); // NOI18N
         btnVerResultado.setText("Ver resultados");
-        pnlFondo.add(btnVerResultado, new org.netbeans.lib.awtextra.AbsoluteConstraints(1220, 770, 240, 60));
+        pnlFondo.add(btnVerResultado, new org.netbeans.lib.awtextra.AbsoluteConstraints(1200, 80, 240, 60));
 
         lblImagenFondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/Resources/Preguntas.png"))); // NOI18N
         lblImagenFondo.setToolTipText("");

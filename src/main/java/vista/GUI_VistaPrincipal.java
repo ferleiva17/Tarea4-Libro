@@ -4,12 +4,14 @@
  */
 package vista;
 
+import java.awt.event.ActionListener;
+
 /**
  *
  * @author Fernis
  */
 public class GUI_VistaPrincipal extends javax.swing.JFrame {
-    
+
     private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(GUI_VistaPrincipal.class.getName());
 
     /**
@@ -17,7 +19,18 @@ public class GUI_VistaPrincipal extends javax.swing.JFrame {
      */
     public GUI_VistaPrincipal() {
         initComponents();
-        }
+    }
+
+    //Permite conectar el botón Iniciar con el controlador
+    public void agregarListenerIniciar(ActionListener listener) {
+        btnIniciar.addActionListener(listener);
+    }
+
+    //Permite conectar el botón Salir con el controlador
+    public void agregarListenerSalir(ActionListener listener) {
+        btnSalir.addActionListener(listener);
+    }
+
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -41,7 +54,6 @@ public class GUI_VistaPrincipal extends javax.swing.JFrame {
 
         btnIniciar.setBackground(new java.awt.Color(0, 204, 153));
         btnIniciar.setFont(new java.awt.Font("Tempus Sans ITC", 1, 24)); // NOI18N
-        btnIniciar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/Resources/VistaPrincipal.png"))); // NOI18N
         btnIniciar.setText("Iniciar");
         getContentPane().add(btnIniciar, new org.netbeans.lib.awtextra.AbsoluteConstraints(1220, 540, 250, 100));
 
