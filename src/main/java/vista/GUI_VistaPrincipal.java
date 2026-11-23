@@ -21,15 +21,15 @@ public class GUI_VistaPrincipal extends javax.swing.JFrame {
         initComponents();
     }
 
-    //Permite conectar el botón Iniciar con el controlador
     public void agregarListenerIniciar(ActionListener listener) {
-        btnIniciar.addActionListener(listener);
-    }
+    btnIniciar.setActionCommand("Iniciar");
+    btnIniciar.addActionListener(listener);
+}
 
-    //Permite conectar el botón Salir con el controlador
-    public void agregarListenerSalir(ActionListener listener) {
-        btnSalir.addActionListener(listener);
-    }
+public void agregarListenerSalir(ActionListener listener) {
+    btnSalir.setActionCommand("Salir");
+    btnSalir.addActionListener(listener);
+}
 
     /**
      * This method is called from within the constructor to initialize the form.

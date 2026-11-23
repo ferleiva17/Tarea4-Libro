@@ -19,23 +19,23 @@ public class GUI_Resultados extends javax.swing.JFrame {
      */
     public GUI_Resultados() {
         initComponents();
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+    }
+
+    // Mostrar los resultados de la actividad
+    public void mostrarResultados(String texto) {
+        txtResultados.setText(texto);
+        txtResultados.setCaretPosition(0);
     }
 
     public void agregarListenerAnterior(ActionListener listener) {
+        btnAnterior.setActionCommand("Actividad");
         btnAnterior.addActionListener(listener);
     }
 
     public void agregarListenerVolverMenu(ActionListener listener) {
+        btnVolverMenu.setActionCommand("Menu");
         btnVolverMenu.addActionListener(listener);
-    }
-
-    public void mostrarResultados(String texto) {
-        javax.swing.JOptionPane.showMessageDialog(
-                this,
-                texto,
-                "Resultados de la actividad",
-                javax.swing.JOptionPane.INFORMATION_MESSAGE
-        );
     }
 
     /**
@@ -48,6 +48,8 @@ public class GUI_Resultados extends javax.swing.JFrame {
     private void initComponents() {
 
         pnlFondo = new javax.swing.JPanel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        txtResultados = new javax.swing.JTextArea();
         btnAnterior = new javax.swing.JButton();
         btnVolverMenu = new javax.swing.JButton();
         lblImagenFondo = new javax.swing.JLabel();
@@ -57,16 +59,25 @@ public class GUI_Resultados extends javax.swing.JFrame {
 
         pnlFondo.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        txtResultados.setEditable(false);
+        txtResultados.setColumns(20);
+        txtResultados.setLineWrap(true);
+        txtResultados.setRows(5);
+        txtResultados.setWrapStyleWord(true);
+        jScrollPane1.setViewportView(txtResultados);
+
+        pnlFondo.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 300, 640, 370));
+
         btnAnterior.setBackground(new java.awt.Color(0, 204, 153));
         btnAnterior.setFont(new java.awt.Font("Tempus Sans ITC", 1, 24)); // NOI18N
         btnAnterior.setText("Anterior");
         btnAnterior.addActionListener(this::btnAnteriorActionPerformed);
-        pnlFondo.add(btnAnterior, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 780, 190, -1));
+        pnlFondo.add(btnAnterior, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 690, 190, -1));
 
         btnVolverMenu.setBackground(new java.awt.Color(0, 204, 153));
         btnVolverMenu.setFont(new java.awt.Font("Tempus Sans ITC", 1, 24)); // NOI18N
         btnVolverMenu.setText("Volver al menú");
-        pnlFondo.add(btnVolverMenu, new org.netbeans.lib.awtextra.AbsoluteConstraints(1220, 780, 210, 40));
+        pnlFondo.add(btnVolverMenu, new org.netbeans.lib.awtextra.AbsoluteConstraints(1200, 700, 210, 40));
 
         lblImagenFondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/Resources/Resultados.png"))); // NOI18N
         pnlFondo.add(lblImagenFondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
@@ -108,7 +119,9 @@ public class GUI_Resultados extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnAnterior;
     private javax.swing.JButton btnVolverMenu;
+    private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JLabel lblImagenFondo;
     private javax.swing.JPanel pnlFondo;
+    private javax.swing.JTextArea txtResultados;
     // End of variables declaration//GEN-END:variables
 }

@@ -21,13 +21,16 @@ public class GUI_ActividadInteractiva extends javax.swing.JFrame {
      */
     public GUI_ActividadInteractiva() {
         initComponents();
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
     }
 
     public void agregarListenerResultados(ActionListener listener) {
+        btnVerResultado.setActionCommand("Resultados");
         btnVerResultado.addActionListener(listener);
     }
 
     public void agregarListenerVolver(ActionListener listener) {
+        lblVolverActividad.setActionCommand("Anterior");
         lblVolverActividad.addActionListener(listener);
     }
 
@@ -91,16 +94,21 @@ public class GUI_ActividadInteractiva extends javax.swing.JFrame {
         btnVerResultado.setBackground(new java.awt.Color(0, 204, 153));
         btnVerResultado.setFont(new java.awt.Font("Tempus Sans ITC", 1, 24)); // NOI18N
         btnVerResultado.setText("Ver resultados");
-        pnlFondo.add(btnVerResultado, new org.netbeans.lib.awtextra.AbsoluteConstraints(1200, 80, 240, 60));
+        btnVerResultado.addActionListener(this::btnVerResultadoActionPerformed);
+        pnlFondo.add(btnVerResultado, new org.netbeans.lib.awtextra.AbsoluteConstraints(950, 80, 240, 60));
 
         lblImagenFondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/Resources/Preguntas.png"))); // NOI18N
         lblImagenFondo.setToolTipText("");
-        pnlFondo.add(lblImagenFondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 6, -1, -1));
+        pnlFondo.add(lblImagenFondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(-140, -110, -1, -1));
 
         getContentPane().add(pnlFondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnVerResultadoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVerResultadoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnVerResultadoActionPerformed
 
     /**
      * @param args the command line arguments

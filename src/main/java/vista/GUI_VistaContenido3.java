@@ -50,12 +50,12 @@ public class GUI_VistaContenido3 extends javax.swing.JFrame {
         btnAnterior.setBackground(new java.awt.Color(0, 204, 153));
         btnAnterior.setFont(new java.awt.Font("Tempus Sans ITC", 1, 24)); // NOI18N
         btnAnterior.setText("Anterior");
-        pnlFondo.add(btnAnterior, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 750, 230, 60));
+        pnlFondo.add(btnAnterior, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 720, 230, 60));
 
         btnActividad.setBackground(new java.awt.Color(0, 204, 153));
         btnActividad.setFont(new java.awt.Font("Tempus Sans ITC", 1, 24)); // NOI18N
         btnActividad.setText("Ir a la actividad");
-        pnlFondo.add(btnActividad, new org.netbeans.lib.awtextra.AbsoluteConstraints(1270, 750, 210, 60));
+        pnlFondo.add(btnActividad, new org.netbeans.lib.awtextra.AbsoluteConstraints(1270, 710, 210, 60));
 
         lblImagenFondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/Resources/contenido3.png"))); // NOI18N
         pnlFondo.add(lblImagenFondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, -30, 1570, 1090));
