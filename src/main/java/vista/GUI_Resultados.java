@@ -28,21 +28,38 @@ public class GUI_Resultados extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        pnlFondo = new javax.swing.JPanel();
+        btnAnterior = new javax.swing.JButton();
+        btnVolverMenu = new javax.swing.JButton();
+        lblImagenFondo = new javax.swing.JLabel();
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
-        );
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        pnlFondo.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        btnAnterior.setBackground(new java.awt.Color(0, 204, 153));
+        btnAnterior.setFont(new java.awt.Font("Tempus Sans ITC", 1, 24)); // NOI18N
+        btnAnterior.setText("Anterior");
+        btnAnterior.addActionListener(this::btnAnteriorActionPerformed);
+        pnlFondo.add(btnAnterior, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 780, 190, -1));
+
+        btnVolverMenu.setBackground(new java.awt.Color(0, 204, 153));
+        btnVolverMenu.setFont(new java.awt.Font("Tempus Sans ITC", 1, 24)); // NOI18N
+        btnVolverMenu.setText("Volver al menú");
+        pnlFondo.add(btnVolverMenu, new org.netbeans.lib.awtextra.AbsoluteConstraints(1220, 780, 210, 40));
+
+        lblImagenFondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/Resources/Resultados.png"))); // NOI18N
+        pnlFondo.add(lblImagenFondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+
+        getContentPane().add(pnlFondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 6, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnAnteriorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAnteriorActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnAnteriorActionPerformed
 
     /**
      * @param args the command line arguments
@@ -70,5 +87,9 @@ public class GUI_Resultados extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnAnterior;
+    private javax.swing.JButton btnVolverMenu;
+    private javax.swing.JLabel lblImagenFondo;
+    private javax.swing.JPanel pnlFondo;
     // End of variables declaration//GEN-END:variables
 }

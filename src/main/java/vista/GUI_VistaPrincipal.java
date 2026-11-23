@@ -27,9 +27,10 @@ public class GUI_VistaPrincipal extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jPopupMenu1 = new javax.swing.JPopupMenu();
         pnlPanelFondo = new javax.swing.JPanel();
+        btnIniciar = new javax.swing.JButton();
         btnSalir = new javax.swing.JButton();
-        btnInicio = new javax.swing.JButton();
         lblVistaFondoPrincipal = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -38,26 +39,22 @@ public class GUI_VistaPrincipal extends javax.swing.JFrame {
         pnlPanelFondo.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
         getContentPane().add(pnlPanelFondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(1411, 924, -1, -1));
 
-        btnSalir.setBackground(new java.awt.Color(0, 204, 255));
-        btnSalir.setFont(new java.awt.Font("SimSun-ExtG", 1, 14)); // NOI18N
-        btnSalir.setText("Salir");
-        getContentPane().add(btnSalir, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 410, -1, -1));
+        btnIniciar.setBackground(new java.awt.Color(0, 204, 153));
+        btnIniciar.setFont(new java.awt.Font("Tempus Sans ITC", 1, 24)); // NOI18N
+        btnIniciar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/Resources/VistaPrincipal.png"))); // NOI18N
+        btnIniciar.setText("Iniciar");
+        getContentPane().add(btnIniciar, new org.netbeans.lib.awtextra.AbsoluteConstraints(1220, 540, 250, 100));
 
-        btnInicio.setBackground(new java.awt.Color(0, 204, 255));
-        btnInicio.setFont(new java.awt.Font("SimSun-ExtG", 1, 14)); // NOI18N
-        btnInicio.setText("Iniciar");
-        btnInicio.addActionListener(this::btnInicioActionPerformed);
-        getContentPane().add(btnInicio, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 410, -1, -1));
+        btnSalir.setBackground(new java.awt.Color(0, 204, 153));
+        btnSalir.setFont(new java.awt.Font("Tempus Sans ITC", 1, 24)); // NOI18N
+        btnSalir.setText("Salir ");
+        getContentPane().add(btnSalir, new org.netbeans.lib.awtextra.AbsoluteConstraints(1220, 650, 250, 100));
 
-        lblVistaFondoPrincipal.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/Resources/VistaPrincipal_800x450.png"))); // NOI18N
-        getContentPane().add(lblVistaFondoPrincipal, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, -1, -1));
+        lblVistaFondoPrincipal.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/Resources/VistaPrincipal.png"))); // NOI18N
+        getContentPane().add(lblVistaFondoPrincipal, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1540, 1020));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void btnInicioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnInicioActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnInicioActionPerformed
 
     /**
      * @param args the command line arguments
@@ -85,8 +82,9 @@ public class GUI_VistaPrincipal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnInicio;
+    private javax.swing.JButton btnIniciar;
     private javax.swing.JButton btnSalir;
+    private javax.swing.JPopupMenu jPopupMenu1;
     private javax.swing.JLabel lblVistaFondoPrincipal;
     private javax.swing.JPanel pnlPanelFondo;
     // End of variables declaration//GEN-END:variables

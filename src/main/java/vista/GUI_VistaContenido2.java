@@ -28,21 +28,39 @@ public class GUI_VistaContenido2 extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        pnlFondo = new javax.swing.JPanel();
+        btnSiguiente = new javax.swing.JButton();
+        btnAnterior = new javax.swing.JButton();
+        lblImagenFondo = new javax.swing.JLabel();
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
-        );
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        pnlFondo.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        btnSiguiente.setBackground(new java.awt.Color(0, 204, 153));
+        btnSiguiente.setFont(new java.awt.Font("Tempus Sans ITC", 1, 24)); // NOI18N
+        btnSiguiente.setText("Siguiente");
+        btnSiguiente.addActionListener(this::btnSiguienteActionPerformed);
+        pnlFondo.add(btnSiguiente, new org.netbeans.lib.awtextra.AbsoluteConstraints(1270, 740, 210, 60));
+
+        btnAnterior.setBackground(new java.awt.Color(0, 204, 153));
+        btnAnterior.setFont(new java.awt.Font("Tempus Sans ITC", 1, 24)); // NOI18N
+        btnAnterior.setText("Anterior");
+        pnlFondo.add(btnAnterior, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 730, 210, 60));
+
+        lblImagenFondo.setBackground(new java.awt.Color(0, 204, 153));
+        lblImagenFondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/Resources/contenido2.png"))); // NOI18N
+        pnlFondo.add(lblImagenFondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+
+        getContentPane().add(pnlFondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 6, -1, 1051));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnSiguienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSiguienteActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnSiguienteActionPerformed
 
     /**
      * @param args the command line arguments
@@ -70,5 +88,9 @@ public class GUI_VistaContenido2 extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnAnterior;
+    private javax.swing.JButton btnSiguiente;
+    private javax.swing.JLabel lblImagenFondo;
+    private javax.swing.JPanel pnlFondo;
     // End of variables declaration//GEN-END:variables
 }

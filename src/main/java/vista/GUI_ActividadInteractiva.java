@@ -28,18 +28,32 @@ public class GUI_ActividadInteractiva extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        pnlFondo = new javax.swing.JPanel();
+        lblVolverActividad = new javax.swing.JButton();
+        btnVerResultado = new javax.swing.JButton();
+        lblImagenFondo = new javax.swing.JLabel();
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
-        );
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        pnlFondo.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        lblVolverActividad.setBackground(new java.awt.Color(0, 204, 153));
+        lblVolverActividad.setFont(new java.awt.Font("Tempus Sans ITC", 1, 24)); // NOI18N
+        lblVolverActividad.setText("Volver a la información");
+        lblVolverActividad.setToolTipText("");
+        pnlFondo.add(lblVolverActividad, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 760, -1, 70));
+
+        btnVerResultado.setBackground(new java.awt.Color(0, 204, 153));
+        btnVerResultado.setFont(new java.awt.Font("Tempus Sans ITC", 1, 24)); // NOI18N
+        btnVerResultado.setText("Ver resultados");
+        pnlFondo.add(btnVerResultado, new org.netbeans.lib.awtextra.AbsoluteConstraints(1220, 770, 240, 60));
+
+        lblImagenFondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/Resources/Preguntas.png"))); // NOI18N
+        lblImagenFondo.setToolTipText("");
+        pnlFondo.add(lblImagenFondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 6, -1, -1));
+
+        getContentPane().add(pnlFondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -70,5 +84,9 @@ public class GUI_ActividadInteractiva extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnVerResultado;
+    private javax.swing.JLabel lblImagenFondo;
+    private javax.swing.JButton lblVolverActividad;
+    private javax.swing.JPanel pnlFondo;
     // End of variables declaration//GEN-END:variables
 }

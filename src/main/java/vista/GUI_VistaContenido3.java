@@ -28,17 +28,42 @@ public class GUI_VistaContenido3 extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        pnlFondo = new javax.swing.JPanel();
+        btnAnterior = new javax.swing.JButton();
+        btnActividad = new javax.swing.JButton();
+        lblImagenFondo = new javax.swing.JLabel();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        pnlFondo.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        btnAnterior.setBackground(new java.awt.Color(0, 204, 153));
+        btnAnterior.setFont(new java.awt.Font("Tempus Sans ITC", 1, 24)); // NOI18N
+        btnAnterior.setText("Anterior");
+        pnlFondo.add(btnAnterior, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 750, 230, 60));
+
+        btnActividad.setBackground(new java.awt.Color(0, 204, 153));
+        btnActividad.setFont(new java.awt.Font("Tempus Sans ITC", 1, 24)); // NOI18N
+        btnActividad.setText("Ir a la actividad");
+        pnlFondo.add(btnActividad, new org.netbeans.lib.awtextra.AbsoluteConstraints(1270, 750, 210, 60));
+
+        lblImagenFondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/Resources/contenido3.png"))); // NOI18N
+        pnlFondo.add(lblImagenFondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, -30, 1570, 1090));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(pnlFondo, javax.swing.GroupLayout.DEFAULT_SIZE, 1689, Short.MAX_VALUE)
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(pnlFondo, javax.swing.GroupLayout.DEFAULT_SIZE, 1153, Short.MAX_VALUE))
         );
 
         pack();
@@ -70,5 +95,9 @@ public class GUI_VistaContenido3 extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnActividad;
+    private javax.swing.JButton btnAnterior;
+    private javax.swing.JLabel lblImagenFondo;
+    private javax.swing.JPanel pnlFondo;
     // End of variables declaration//GEN-END:variables
 }
