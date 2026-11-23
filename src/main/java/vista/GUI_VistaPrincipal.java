@@ -27,26 +27,37 @@ public class GUI_VistaPrincipal extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel1 = new javax.swing.JPanel();
-        lblTitulo = new javax.swing.JLabel();
-        lblFondo = new javax.swing.JLabel();
+        pnlPanelFondo = new javax.swing.JPanel();
+        btnSalir = new javax.swing.JButton();
+        btnInicio = new javax.swing.JButton();
+        lblVistaFondoPrincipal = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1411, 924, -1, -1));
+        pnlPanelFondo.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        getContentPane().add(pnlPanelFondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(1411, 924, -1, -1));
 
-        lblTitulo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/Resources/Mi Libro Interactivo_ Cuidado del Agua (1).png"))); // NOI18N
-        lblTitulo.setMaximumSize(new java.awt.Dimension(80, 80));
-        getContentPane().add(lblTitulo, new org.netbeans.lib.awtextra.AbsoluteConstraints(-140, 150, 1570, 730));
+        btnSalir.setBackground(new java.awt.Color(0, 204, 255));
+        btnSalir.setFont(new java.awt.Font("SimSun-ExtG", 1, 14)); // NOI18N
+        btnSalir.setText("Salir");
+        getContentPane().add(btnSalir, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 410, -1, -1));
 
-        lblFondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/Resources/Entrada .jpeg"))); // NOI18N
-        lblFondo.setText("jLabel1");
-        getContentPane().add(lblFondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 6, 1452, -1));
+        btnInicio.setBackground(new java.awt.Color(0, 204, 255));
+        btnInicio.setFont(new java.awt.Font("SimSun-ExtG", 1, 14)); // NOI18N
+        btnInicio.setText("Iniciar");
+        btnInicio.addActionListener(this::btnInicioActionPerformed);
+        getContentPane().add(btnInicio, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 410, -1, -1));
+
+        lblVistaFondoPrincipal.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/Resources/VistaPrincipal_800x450.png"))); // NOI18N
+        getContentPane().add(lblVistaFondoPrincipal, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnInicioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnInicioActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnInicioActionPerformed
 
     /**
      * @param args the command line arguments
@@ -74,8 +85,9 @@ public class GUI_VistaPrincipal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JPanel jPanel1;
-    private javax.swing.JLabel lblFondo;
-    private javax.swing.JLabel lblTitulo;
+    private javax.swing.JButton btnInicio;
+    private javax.swing.JButton btnSalir;
+    private javax.swing.JLabel lblVistaFondoPrincipal;
+    private javax.swing.JPanel pnlPanelFondo;
     // End of variables declaration//GEN-END:variables
 }
