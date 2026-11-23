@@ -8,6 +8,22 @@ package modelo;
  *
  * @author Fernis
  */
-public class PaginaActividad {
-    
+
+// Clase hija que hereda de Pagina
+public class PaginaActividad extends Pagina
+{
+    // Constructor
+    public PaginaActividad(String titulo, int numeroPagina, String contenido)
+    {
+        super(titulo, numeroPagina, contenido);
+    }
+
+    // Implementacion del metodo abstracto de la clase madre
+    @Override
+    public String mostrarContenido()
+    {
+        return "Pagina " + getNumeroPagina() + ": " + getTitulo()
+                + "\n\n" + getContenido()
+                + "\n\nPresione RESPONDER para contestar las tres preguntas.";
+    }
 }
