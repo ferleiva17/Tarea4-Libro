@@ -8,6 +8,19 @@ package modelo;
  *
  * @author Fernis
  */
-public class PaginaInformativa {
-    
+// Clase hija que hereda de Pagina
+public class PaginaInformativa extends Pagina
+{
+    // Constructor
+    public PaginaInformativa(String titulo, int numeroPagina, String contenido)
+    {
+        super(titulo, numeroPagina, contenido);
+    }
+
+    // Implementacion del metodo abstracto de la clase madre
+    @Override
+    public String mostrarContenido()
+    {
+        return "Pagina " + getNumeroPagina() + ": " + getTitulo() + "\n\n" + getContenido();
+    }
 }
