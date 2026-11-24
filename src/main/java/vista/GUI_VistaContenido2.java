@@ -60,10 +60,10 @@ public class GUI_VistaContenido2 extends javax.swing.JFrame {
         pnlFondo.add(btnAnterior, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 730, 210, 60));
 
         lblImagenFondo.setBackground(new java.awt.Color(0, 204, 153));
-        lblImagenFondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/Resources/contenido2.png"))); // NOI18N
+        lblImagenFondo.setIcon(new javax.swing.ImageIcon("C:\\Users\\Fernis\\Documents\\NetBeansProjects\\Tarea4-Libro-Git\\src\\main\\java\\vista\\Resources\\contenido2.png")); // NOI18N
         pnlFondo.add(lblImagenFondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
-        getContentPane().add(pnlFondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 6, -1, 1051));
+        getContentPane().add(pnlFondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 1051));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents

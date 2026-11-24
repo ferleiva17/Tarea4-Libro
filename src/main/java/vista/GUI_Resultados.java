@@ -48,25 +48,16 @@ public class GUI_Resultados extends javax.swing.JFrame {
     private void initComponents() {
 
         pnlFondo = new javax.swing.JPanel();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        txtResultados = new javax.swing.JTextArea();
         btnAnterior = new javax.swing.JButton();
         btnVolverMenu = new javax.swing.JButton();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        txtResultados = new javax.swing.JTextArea();
         lblImagenFondo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         pnlFondo.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        txtResultados.setEditable(false);
-        txtResultados.setColumns(20);
-        txtResultados.setLineWrap(true);
-        txtResultados.setRows(5);
-        txtResultados.setWrapStyleWord(true);
-        jScrollPane1.setViewportView(txtResultados);
-
-        pnlFondo.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 300, 640, 370));
 
         btnAnterior.setBackground(new java.awt.Color(0, 204, 153));
         btnAnterior.setFont(new java.awt.Font("Tempus Sans ITC", 1, 24)); // NOI18N
@@ -79,10 +70,19 @@ public class GUI_Resultados extends javax.swing.JFrame {
         btnVolverMenu.setText("Volver al menú");
         pnlFondo.add(btnVolverMenu, new org.netbeans.lib.awtextra.AbsoluteConstraints(1200, 700, 210, 40));
 
-        lblImagenFondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/Resources/Resultados.png"))); // NOI18N
-        pnlFondo.add(lblImagenFondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+        txtResultados.setEditable(false);
+        txtResultados.setColumns(20);
+        txtResultados.setLineWrap(true);
+        txtResultados.setRows(5);
+        txtResultados.setWrapStyleWord(true);
+        jScrollPane1.setViewportView(txtResultados);
 
-        getContentPane().add(pnlFondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 6, -1, -1));
+        pnlFondo.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 260, 640, 370));
+
+        lblImagenFondo.setIcon(new javax.swing.ImageIcon("C:\\Users\\Fernis\\Documents\\NetBeansProjects\\Tarea4-Libro-Git\\src\\main\\java\\vista\\Resources\\Resultados.png")); // NOI18N
+        pnlFondo.add(lblImagenFondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1450, 1010));
+
+        getContentPane().add(pnlFondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1450, 850));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents

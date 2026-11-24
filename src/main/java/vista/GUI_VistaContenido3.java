@@ -57,23 +57,18 @@ public class GUI_VistaContenido3 extends javax.swing.JFrame {
         btnActividad.setText("Ir a la actividad");
         pnlFondo.add(btnActividad, new org.netbeans.lib.awtextra.AbsoluteConstraints(1270, 710, 210, 60));
 
-        lblImagenFondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/Resources/contenido3.png"))); // NOI18N
-        pnlFondo.add(lblImagenFondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, -30, 1570, 1090));
+        lblImagenFondo.setIcon(new javax.swing.ImageIcon("C:\\Users\\Fernis\\Documents\\NetBeansProjects\\Tarea4-Libro-Git\\src\\main\\java\\vista\\Resources\\contenido3.png")); // NOI18N
+        pnlFondo.add(lblImagenFondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1570, 1020));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(pnlFondo, javax.swing.GroupLayout.DEFAULT_SIZE, 1689, Short.MAX_VALUE)
-                .addContainerGap())
+            .addComponent(pnlFondo, javax.swing.GroupLayout.PREFERRED_SIZE, 1537, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(pnlFondo, javax.swing.GroupLayout.DEFAULT_SIZE, 1153, Short.MAX_VALUE))
+            .addComponent(pnlFondo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();

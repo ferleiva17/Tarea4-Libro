@@ -24,9 +24,13 @@ public class GUI_ActividadInteractiva extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
     }
 
-    public void agregarListenerResultados(ActionListener listener) {
-        btnVerResultado.setActionCommand("Resultados");
-        btnVerResultado.addActionListener(listener);
+    /**
+     *
+     * @param listener
+     */
+    public void agregarListenerPreguntas(ActionListener listener) {
+        btnMostrarPreguntas.setActionCommand("Mostrar Preguntas");
+        btnMostrarPreguntas.addActionListener(listener);
     }
 
     public void agregarListenerVolver(ActionListener listener) {
@@ -77,7 +81,7 @@ public class GUI_ActividadInteractiva extends javax.swing.JFrame {
 
         pnlFondo = new javax.swing.JPanel();
         lblVolverActividad = new javax.swing.JButton();
-        btnVerResultado = new javax.swing.JButton();
+        btnMostrarPreguntas = new javax.swing.JButton();
         lblImagenFondo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -89,26 +93,26 @@ public class GUI_ActividadInteractiva extends javax.swing.JFrame {
         lblVolverActividad.setFont(new java.awt.Font("Tempus Sans ITC", 1, 24)); // NOI18N
         lblVolverActividad.setText("Volver a la información");
         lblVolverActividad.setToolTipText("");
-        pnlFondo.add(lblVolverActividad, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 90, -1, 70));
+        pnlFondo.add(lblVolverActividad, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 70, -1, 70));
 
-        btnVerResultado.setBackground(new java.awt.Color(0, 204, 153));
-        btnVerResultado.setFont(new java.awt.Font("Tempus Sans ITC", 1, 24)); // NOI18N
-        btnVerResultado.setText("Ver resultados");
-        btnVerResultado.addActionListener(this::btnVerResultadoActionPerformed);
-        pnlFondo.add(btnVerResultado, new org.netbeans.lib.awtextra.AbsoluteConstraints(950, 80, 240, 60));
+        btnMostrarPreguntas.setBackground(new java.awt.Color(0, 204, 153));
+        btnMostrarPreguntas.setFont(new java.awt.Font("Tempus Sans ITC", 1, 24)); // NOI18N
+        btnMostrarPreguntas.setText("Mostrar Preguntas");
+        btnMostrarPreguntas.addActionListener(this::btnMostrarPreguntasActionPerformed);
+        pnlFondo.add(btnMostrarPreguntas, new org.netbeans.lib.awtextra.AbsoluteConstraints(1000, 70, 280, 60));
 
-        lblImagenFondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/Resources/Preguntas.png"))); // NOI18N
+        lblImagenFondo.setIcon(new javax.swing.ImageIcon("C:\\Users\\Fernis\\Documents\\NetBeansProjects\\Tarea4-Libro-Git\\src\\main\\java\\vista\\Resources\\Preguntas.png")); // NOI18N
         lblImagenFondo.setToolTipText("");
-        pnlFondo.add(lblImagenFondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(-140, -110, -1, -1));
+        pnlFondo.add(lblImagenFondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 1010));
 
-        getContentPane().add(pnlFondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+        getContentPane().add(pnlFondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1530, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnVerResultadoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVerResultadoActionPerformed
+    private void btnMostrarPreguntasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMostrarPreguntasActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnVerResultadoActionPerformed
+    }//GEN-LAST:event_btnMostrarPreguntasActionPerformed
 
     /**
      * @param args the command line arguments
@@ -136,7 +140,7 @@ public class GUI_ActividadInteractiva extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnVerResultado;
+    private javax.swing.JButton btnMostrarPreguntas;
     private javax.swing.JLabel lblImagenFondo;
     private javax.swing.JButton lblVolverActividad;
     private javax.swing.JPanel pnlFondo;

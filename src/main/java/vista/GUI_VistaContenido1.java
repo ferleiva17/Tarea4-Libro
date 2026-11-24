@@ -17,8 +17,14 @@ public class GUI_VistaContenido1 extends javax.swing.JFrame {
     /**
      * Creates new form GUI_VistaContenido1
      */
-    public GUI_VistaContenido1() {
+    public GUI_VistaContenido1() 
+    {
         initComponents();
+        java.net.URL imagen = getClass().getResource("/vista/Resources/Contenido1.png");
+        if (imagen != null) 
+        {
+            lblImgenContenido.setIcon(new javax.swing.ImageIcon(imagen));
+        }
     }
 
     public void agregarListenerAnterior(ActionListener listener) {
@@ -59,8 +65,8 @@ public class GUI_VistaContenido1 extends javax.swing.JFrame {
         btnAnterior.setText("Anterior");
         getContentPane().add(btnAnterior, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 570, 240, 70));
 
-        lblImgenContenido.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/Resources/Contenido1.png"))); // NOI18N
-        getContentPane().add(lblImgenContenido, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1570, 730));
+        lblImgenContenido.setIcon(new javax.swing.ImageIcon("C:\\Users\\Fernis\\Documents\\NetBeansProjects\\Tarea4-Libro-Git\\src\\main\\java\\vista\\Resources\\Contenido1.png")); // NOI18N
+        getContentPane().add(lblImgenContenido, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1570, 900));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents

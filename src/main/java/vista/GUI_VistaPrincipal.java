@@ -17,8 +17,14 @@ public class GUI_VistaPrincipal extends javax.swing.JFrame {
     /**
      * Creates new form GUI_VistaPrincipal
      */
-    public GUI_VistaPrincipal() {
+    public GUI_VistaPrincipal() 
+    {
         initComponents();
+        java.net.URL imagen = getClass().getResource("/vista/Resources/VistaPrincipal.png");
+        if (imagen != null) 
+        {
+            lblVistaFondoPrincipal.setIcon(new javax.swing.ImageIcon(imagen));
+        }
     }
 
     public void agregarListenerIniciar(ActionListener listener) {
@@ -62,8 +68,8 @@ public void agregarListenerSalir(ActionListener listener) {
         btnSalir.setText("Salir ");
         getContentPane().add(btnSalir, new org.netbeans.lib.awtextra.AbsoluteConstraints(1220, 650, 250, 100));
 
-        lblVistaFondoPrincipal.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/Resources/VistaPrincipal.png"))); // NOI18N
-        getContentPane().add(lblVistaFondoPrincipal, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1540, 1020));
+        lblVistaFondoPrincipal.setIcon(new javax.swing.ImageIcon("C:\\Users\\Fernis\\Documents\\NetBeansProjects\\Tarea4-Libro-Git\\src\\main\\java\\vista\\Resources\\VistaPrincipal.png")); // NOI18N
+        getContentPane().add(lblVistaFondoPrincipal, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1530, 1020));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
