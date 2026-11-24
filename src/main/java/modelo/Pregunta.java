@@ -8,6 +8,29 @@ package modelo;
  *
  * @author Fernis
  */
-public class Pregunta {
-    
+
+public class Pregunta
+{
+    // Atributos de la pregunta
+    private String texto;
+    private String[] opciones;
+
+    // Constructor
+    public Pregunta(String texto, String[] opciones)
+    {
+        this.texto = texto;
+        this.opciones = opciones;
+    }
+
+    // Obtener el texto de la pregunta
+    public String getTexto()
+    {
+        return texto;
+    }
+
+    // Obtener las opciones de respuesta
+    public String[] getOpciones()
+    {
+        return opciones;
+    }
 }
