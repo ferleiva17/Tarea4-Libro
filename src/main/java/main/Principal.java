@@ -22,4 +22,5 @@ public class Principal {
 
         vista.setVisible(true);
     }
-} //Fin clase Principal
+
+} // Fin clase Principal
