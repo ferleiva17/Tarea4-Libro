@@ -68,7 +68,7 @@ public void agregarListenerSalir(ActionListener listener) {
         btnSalir.setText("Salir ");
         getContentPane().add(btnSalir, new org.netbeans.lib.awtextra.AbsoluteConstraints(1220, 650, 250, 100));
 
-        lblVistaFondoPrincipal.setIcon(new javax.swing.ImageIcon("C:\\Users\\Fernis\\Documents\\NetBeansProjects\\Tarea4-Libro-Git\\src\\main\\java\\vista\\Resources\\VistaPrincipal.png")); // NOI18N
+        lblVistaFondoPrincipal.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/VistaPrincipal.png"))); // NOI18N
         getContentPane().add(lblVistaFondoPrincipal, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1530, 1020));
 
         pack();

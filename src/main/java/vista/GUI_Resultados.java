@@ -79,7 +79,7 @@ public class GUI_Resultados extends javax.swing.JFrame {
 
         pnlFondo.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 260, 640, 370));
 
-        lblImagenFondo.setIcon(new javax.swing.ImageIcon("C:\\Users\\Fernis\\Documents\\NetBeansProjects\\Tarea4-Libro-Git\\src\\main\\java\\vista\\Resources\\Resultados.png")); // NOI18N
+        lblImagenFondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Resultados.png"))); // NOI18N
         pnlFondo.add(lblImagenFondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1450, 1010));
 
         getContentPane().add(pnlFondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1450, 850));

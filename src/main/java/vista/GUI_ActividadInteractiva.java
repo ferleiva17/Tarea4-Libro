@@ -93,17 +93,19 @@ public class GUI_ActividadInteractiva extends javax.swing.JFrame {
         lblVolverActividad.setFont(new java.awt.Font("Tempus Sans ITC", 1, 24)); // NOI18N
         lblVolverActividad.setText("Volver a la información");
         lblVolverActividad.setToolTipText("");
-        pnlFondo.add(lblVolverActividad, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 70, -1, 70));
+        lblVolverActividad.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        pnlFondo.add(lblVolverActividad, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 190, -1, 220));
 
         btnMostrarPreguntas.setBackground(new java.awt.Color(0, 204, 153));
         btnMostrarPreguntas.setFont(new java.awt.Font("Tempus Sans ITC", 1, 24)); // NOI18N
         btnMostrarPreguntas.setText("Mostrar Preguntas");
+        btnMostrarPreguntas.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnMostrarPreguntas.addActionListener(this::btnMostrarPreguntasActionPerformed);
-        pnlFondo.add(btnMostrarPreguntas, new org.netbeans.lib.awtextra.AbsoluteConstraints(1000, 70, 280, 60));
+        pnlFondo.add(btnMostrarPreguntas, new org.netbeans.lib.awtextra.AbsoluteConstraints(940, 200, 280, 220));
 
-        lblImagenFondo.setIcon(new javax.swing.ImageIcon("C:\\Users\\Fernis\\Documents\\NetBeansProjects\\Tarea4-Libro-Git\\src\\main\\java\\vista\\Resources\\Preguntas.png")); // NOI18N
+        lblImagenFondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Preguntas.png"))); // NOI18N
         lblImagenFondo.setToolTipText("");
-        pnlFondo.add(lblImagenFondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 1010));
+        pnlFondo.add(lblImagenFondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -10, -1, 1010));
 
         getContentPane().add(pnlFondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1530, -1));
 

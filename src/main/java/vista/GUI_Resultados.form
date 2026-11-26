@@ -97,7 +97,7 @@
         <Component class="javax.swing.JLabel" name="lblImagenFondo">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\Fernis\Documents\NetBeansProjects\Tarea4-Libro-Git\src\main\java\vista\Resources\Resultados.png"/>
+              <Image iconType="3" name="/images/Resultados.png"/>
             </Property>
           </Properties>
           <Constraints>

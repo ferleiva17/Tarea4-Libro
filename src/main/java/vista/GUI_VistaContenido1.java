@@ -65,7 +65,7 @@ public class GUI_VistaContenido1 extends javax.swing.JFrame {
         btnAnterior.setText("Anterior");
         getContentPane().add(btnAnterior, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 570, 240, 70));
 
-        lblImgenContenido.setIcon(new javax.swing.ImageIcon("C:\\Users\\Fernis\\Documents\\NetBeansProjects\\Tarea4-Libro-Git\\src\\main\\java\\vista\\Resources\\Contenido1.png")); // NOI18N
+        lblImgenContenido.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Contenido1.png"))); // NOI18N
         getContentPane().add(lblImgenContenido, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1570, 900));
 
         pack();

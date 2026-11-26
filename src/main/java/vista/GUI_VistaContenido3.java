@@ -57,7 +57,7 @@ public class GUI_VistaContenido3 extends javax.swing.JFrame {
         btnActividad.setText("Ir a la actividad");
         pnlFondo.add(btnActividad, new org.netbeans.lib.awtextra.AbsoluteConstraints(1270, 710, 210, 60));
 
-        lblImagenFondo.setIcon(new javax.swing.ImageIcon("C:\\Users\\Fernis\\Documents\\NetBeansProjects\\Tarea4-Libro-Git\\src\\main\\java\\vista\\Resources\\contenido3.png")); // NOI18N
+        lblImagenFondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/contenido3.png"))); // NOI18N
         pnlFondo.add(lblImagenFondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1570, 1020));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());

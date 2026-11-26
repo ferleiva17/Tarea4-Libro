@@ -77,7 +77,7 @@
               <Color blue="99" green="cc" red="0" type="rgb"/>
             </Property>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\Fernis\Documents\NetBeansProjects\Tarea4-Libro-Git\src\main\java\vista\Resources\contenido2.png"/>
+              <Image iconType="3" name="/images/contenido2.png"/>
             </Property>
           </Properties>
           <Constraints>
