@@ -8,6 +8,40 @@ package modelo;
  *
  * @author Fernis
  */
-public class Pagina {
-    
-}
+//clase madre Página
+public abstract class Pagina
+{
+    //Estos son los atributos de la clase madre que
+    //heredarán las clases hijas
+    private String titulo;
+    private int numeroPagina;
+    private String contenido;
+
+    public Pagina(String titulo, int numeroPagina, String contenido)
+    {
+        //El constructor permite inicializar una página cuando creamos un
+        //objeto de alguna de sus clases hijas.
+        this.titulo = titulo;
+        this.numeroPagina = numeroPagina;
+        this.contenido = contenido;
+    }
+
+    public String getTitulo()
+    {
+        return titulo;
+    }
+
+    public int getNumeroPagina()
+    {
+        return numeroPagina;
+    }
+
+    public String getContenido()
+    {
+        return contenido;
+    }
+
+    //El método abstracto permite mostrar polimorfismo
+    public abstract String mostrarContenido();
+
+}//Fin de la clase Pagina
